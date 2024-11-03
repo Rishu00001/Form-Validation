@@ -21,9 +21,8 @@
                 name="name"
                 id="name"
                 placeholder="Enter name here"
-                required
               />
-            </p>
+              <span id="nameError"></span>
             <p>
               <label for="email">Email</label>
               <input
@@ -31,8 +30,8 @@
                 name="email"
                 id="email"
                 placeholder="Enter email here"
-                required
               />
+              <span id="emailError"></span>
             </p>
             <p>
               <label for="password">Password</label>
@@ -41,12 +40,11 @@
                 name="password"
                 id="password"
                 placeholder="minimum 8 characters"
-                required
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               />
+              <span id="passwordError"></span>
             </p>
             <p>
-              <input type="submit" value="Create Account" />
+              <input id="submitBtn" type="submit" value="Create Account" />
             </p>
           </form>
         </main>
@@ -55,5 +53,6 @@
         </footer>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

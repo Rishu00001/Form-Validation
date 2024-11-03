@@ -33,6 +33,7 @@
 .signup-body p label{
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
 }
 .signup-body p input{
     width: 100%;
@@ -65,4 +66,9 @@
     .box{
         width: 80vw;
     }
+}
+.signup-body p span{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(238, 13, 13);
 }
