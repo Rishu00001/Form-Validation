@@ -6,12 +6,17 @@ const passwordError = document.getElementById("passwordError");
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (validateName() && validateEmail()&&validatePassword()) {
-    alert("Form Submitted successfully");
+    document.getElementById("name").value = ''
+    document.getElementById("email").value = ''
+    document.getElementById("password").value = ''
+    setTimeout(() => {
+      alert("Form submitted successfully!");
+    }, 0);
   }
 });
 
 let validateName = () => {
-  let name = document.getElementById("name").value;
+  let name = document.getElementById("name").value.trim();
   if (name.length === 0) {
     nameError.innerHTML = "*Name is requeired";
     return false;
@@ -25,7 +30,7 @@ let validateName = () => {
 };
 
 let validateEmail = () => {
-  let email = document.getElementById("email").value;
+  let email = document.getElementById("email").value.trim();
   if (email.length === 0) {
     emailError.innerHTML = "*mandatory";
     return false;
@@ -39,7 +44,7 @@ let validateEmail = () => {
 };
 
 let validatePassword = () => {
-  let password = document.getElementById("password").value;
+  let password = document.getElementById("password").value.trim();
   if (password.length === 0) {
     passwordError.innerHTML = "*mandatory";
     return false;
