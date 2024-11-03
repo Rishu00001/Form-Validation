@@ -61,7 +61,7 @@
 .signup-footer p a:hover{
     color: #89c9f3;
 }
-@media (max-width: 400px){
+@media (max-width: 420px){
     .box{
         width: 80vw;
     }
