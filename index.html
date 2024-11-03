@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header class="signup-header">
+          <h1>Signup</h1>
+        </header>
+        <main class="signup-body">
+          <form action="#">
+            <p>
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter name here"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email here"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="minimum 8 characters"
+                required
+                min="8"
+              />
+            </p>
+            <p>
+              <input type="submit" value="Create Account" />
+            </p>
+          </form>
+        </main>
+        <footer class="signup-footer">
+          <p>Already have an account? <a href="#">Login here</a></p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
